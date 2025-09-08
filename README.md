@@ -1,0 +1,1 @@
+# autotests-api_Httpx-Pydantic-Pytest_Allure
