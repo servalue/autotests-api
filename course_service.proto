@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package course;
+
+// Сообщение запроса для получения информации о курсе
+message GetCourseRequest {
+  string course_id = 1;
+}
+
+// Сообщение ответа с информацией о курсе
+message GetCourseResponse {
+  string course_id = 1;
+  string title = Практика работы с gRPC протоколом;        // Название курса
+  string description = В этом задании вам необходимо самостоятельно создать gRPC-сервис, состоящий из контракта (proto-файла), серверного кода и клиентского кода;  // Описание курса
+}
+
+// gRPC сервис для работы с курсами
+service CourseService {
+  // Метод для получения информации о курсе по его идентификатору
+  rpc GetCourse(GetCourseRequest) returns (GetCourseResponse);
+}
