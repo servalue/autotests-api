@@ -205,3 +205,32 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# gRPC Generated Files
+# Обычно сгенерированные *_pb2.py и *_pb2_grpc.py файлы НЕ коммитят,
+# но для учебных целей и автотестов их можно оставить в репозитории
+# *_pb2.py
+# *_pb2_grpc.py
+
+# gRPC logs and certificates
+*.crt
+*.key
+*.pem
+
+# Project specific
+# Логи сервера
+server.log
+*.log
+
+# Конфигурационные файлы с секретами
+config/secrets.yaml
+config/local.yaml
+.secrets
+
+# Временные файлы тестов
+test_output/
+test_reports/
+
+# IDE специфичные файлы
+.vscode/settings.json
+.idea/workspace.xml
