@@ -1,4 +1,4 @@
-from httpx import Client, URL, QueryParams, Response, RequestData, RequestFiles
+from httpx import Client, URL, QueryParams, Response
 from typing import Any
 
 
@@ -35,8 +35,8 @@ class APIClient:
         self,
         url: URL | str,  # URL запроса
         json: Any | None = None,  # JSON данные для тела запроса
-        data: RequestData | None = None,  # Form данные для тела запроса
-        files: RequestFiles | None = None,  # Файлы для загрузки
+        data: Any | None = None,  # Form данные для тела запроса
+        files: Any | None = None,  # Файлы для загрузки
     ) -> Response:
         """
         Выполняет POST-запрос.
