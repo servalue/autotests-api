@@ -61,6 +61,7 @@ create_exercise_request = CreateExerciseRequestDict(
     courseId=create_course_response['course']['id'], # Идентификатор курса, к которому будет привязано задание
     maxScore=100,
     minScore=10,
+    orderIndex=1,
     description="API Test Exercise",
     estimatedTime="2 weeks"
 )
