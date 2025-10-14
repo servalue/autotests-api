@@ -1,0 +1,8 @@
+{
+    "id": "course-id",
+    "title": "Playwright",
+    "maxScore": 100,
+    "minScore": 10,
+    "description": "Playwright",
+    "estimatedTime": "1 week"
+}
